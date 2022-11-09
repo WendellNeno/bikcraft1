@@ -31,6 +31,11 @@
   background-color: var(--cor-9);
 }
 
+.botao.seta {
+  display: flex;
+  align-items: center;
+}
+
 .botao.seta::after {
   content: "";
   display: inline-block;
@@ -38,6 +43,11 @@
   height: 10px;
   margin-left: 12px;
   background: url(../../svg-icone/seta-px.svg);
+  transition: transform 0.2s;
+}
+
+.botao.seta:hover::after {
+  transform: translateX(4px);
 }
 
 @media (max-width: 600px) {
